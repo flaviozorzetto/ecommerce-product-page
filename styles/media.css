@@ -1,0 +1,100 @@
+@media screen and (max-width:1500px) {
+    .main-container {
+        margin-left: 20px;
+        min-width: 350px;
+    }
+
+    .main {
+        justify-content: center;
+        margin: 85px 13% 0 13%;
+    }
+
+    .image-gallery {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:1225px) {
+    .header {
+        padding: 0 5%;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .cart-menu {
+        right: -65px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .main {
+        flex-direction: column;
+        margin: 0;
+        padding-bottom: 100px;
+    }
+
+    .prev-image, .next-image {
+        display: block;
+    }
+    
+
+    .header {
+        height: 70px;
+    }
+
+    .main-container {
+        width: 350px;
+        align-self: center;
+        margin-left: 5px;
+    }
+
+    .display-image {
+        border-radius: 0;
+        cursor: default;
+    }
+
+    .avatar {
+        width: 30px;
+    }
+
+    .image-gallery {
+        display: none;
+    }
+
+    .company, .total {
+        margin-top: 0;
+    }
+
+    .price {
+        width: 100%;
+    }
+
+    .total {
+        margin-left: auto;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 16px;
+    }
+    
+    .description {
+        font-size: 16px;
+    }
+
+    .lightbox-component, .add-to-cart {
+        width: 100%;
+    }
+
+    .buy-component {
+        height: 130px;
+        gap: 20px;
+    }
+}

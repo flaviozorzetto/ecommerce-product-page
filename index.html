@@ -2,111 +2,150 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | E-commerce product page</title>
+    <title>Frontend Mentor | E-commerce product page</title>
 
-  <link rel="stylesheet" href="./styles/root.css">
-  <link rel="stylesheet" href="./styles/reset.css">
-  <link rel="stylesheet" href="./styles/header.css">
-  <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/root.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./styles/drawer.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-  <header class="header">
-    <div class="header-wrapper">
-      <div class="header-container">
-        <!-- <div class="burger"></div> -->
-        <img src="images/logo.svg" alt="">
-        <li class="header-nav">
-          <ul class="nav-item"><a href="#" class="nav-link">Collections</a></ul>
-          <ul class="nav-item"><a href="#" class="nav-link">Men</a></ul>
-          <ul class="nav-item"><a href="#" class="nav-link">Women</a></ul>
-          <ul class="nav-item"><a href="#" class="nav-link">About</a></ul>
-          <ul class="nav-item"><a href="#" class="nav-link">Contact</a></ul>
-        </li>
-      </div>
-      <div class="header-container">
-        <div id="cart-anchor">
-          <div class="cart-quantity hidden"></div>
-          <img src="images/icon-cart.svg" alt="" class="shopping-cart">
-          <div class="cart-menu hidden">
-              <p class="cart-title">Cart</p>
-              <div class="line"></div>
-            <div class="items-wrapper">
-              <div class="empty">
-                Your cart is empty.
-              </div>
-              <div id="checkout-btn" class="checkout-button">Checkout</div>
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header-container">
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <img src="images/logo.svg" alt="">
+                <li class="header-nav">
+                    <ul class="nav-item"><a href="#" class="nav-link">Collections</a></ul>
+                    <ul class="nav-item"><a href="#" class="nav-link">Men</a></ul>
+                    <ul class="nav-item"><a href="#" class="nav-link">Women</a></ul>
+                    <ul class="nav-item"><a href="#" class="nav-link">About</a></ul>
+                    <ul class="nav-item"><a href="#" class="nav-link">Contact</a></ul>
+                </li>
             </div>
-          </div>
+            <div class="header-container">
+                <div id="cart-anchor">
+                    <div class="cart-quantity hidden"></div>
+                    <img src="images/icon-cart.svg" alt="" class="shopping-cart">
+                    <div class="cart-menu hidden">
+                        <p class="cart-title">Cart</p>
+                        <div class="line"></div>
+                        <div class="items-wrapper">
+                            <div class="empty">
+                                Your cart is empty.
+                            </div>
+                            <div id="checkout-btn" class="checkout-button">Checkout</div>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/image-avatar.png" alt="" class="avatar">
+            </div>
         </div>
-        <img src="images/image-avatar.png" alt="" class="avatar">
-      </div>
-    </div>
-  </header>
-  <main class="main">
-    <div>
-      <div class="display-image" id="image-displayer">
-      </div>
-      <div class="image-gallery">
-        <div class="image-container selected">
-          <div class="image-product product-1"></div>
+    </header>
+    <main class="main">
+        <div>
+            <div class="display-image" id="image-displayer">
+                <div class="prev-image" ></div>
+                <div class="next-image" ></div>
+            </div>
+            <div class="image-gallery">
+                <div class="image-container selected">
+                    <div class="image-product product-1"></div>
+                </div>
+                <div class="image-container">
+                    <div class="image-product product-2"></div>
+                </div>
+                <div class="image-container">
+                    <div class="image-product product-3"></div>
+                </div>
+                <div class="image-container">
+                    <div class="image-product product-4"></div>
+                </div>
+            </div>
         </div>
-        <div class="image-container">
-          <div class="image-product product-2"></div>
+        <div class="main-container">
+            <p class="company">Sneaker Company</p>
+            <h1 class="title">
+                Fall Limited Edition Sneakers
+            </h1>
+            <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+            <div class="price">
+                <p class="discounted-total">$125.00</p>
+                <div class="discount">
+                    <p>50%</p>
+                </div>
+                <p class="total">$250.00</p>
+            </div>
+            <div class="buy-component">
+                <div class="lightbox-component">
+                    <div id="minus-button">
+                        <img src="images/icon-minus.svg" alt="">
+                    </div>
+                    <p class="lightbox-current" id="current">0</p>
+                    <div id="plus-button">
+                        <img src="images/icon-plus.svg" alt="">
+                    </div>
+                </div>
+                <div class="add-to-cart" id="add-cart">
+                    <img src="images/icon-cart.svg" alt="" style="filter: brightness(0) invert(1);">
+                    <p>Add to cart</p>
+                </div>
+            </div>
+            <div class="lightbox hidden">
+                <div class="display-image lightbox-image">
+                    <div class="prev-image" ></div>
+                    <div class="next-image" ></div>
+                    <div class="x" id="close-lightbox">
+                    </div>
+                    <div class="image-gallery lightbox-gallery">
+                        <div class="image-container-lightbox selected">
+                            <div class="image-product product-1"></div>
+                        </div>
+                        <div class="image-container-lightbox">
+                            <div class="image-product product-2"></div>
+                        </div>
+                        <div class="image-container-lightbox">
+                            <div class="image-product product-3"></div>
+                        </div>
+                        <div class="image-container-lightbox">
+                            <div class="image-product product-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="image-container">
-          <div class="image-product product-3"></div>
+    </main>
+    <aside class="blur-bg hidden">
+        <div class="drawer">
+            <div class="drawer-item"><a href="" class="drawer-link">Collections</a></div>
+            <div class="drawer-item"><a href="" class="drawer-link">Men</a></div>
+            <div class="drawer-item"><a href="" class="drawer-link">Women</a></div>
+            <div class="drawer-item"><a href="" class="drawer-link">About</a></div>
+            <div class="drawer-item"><a href="" class="drawer-link">Contact</a></div>
         </div>
-        <div class="image-container">
-          <div class="image-product product-4"></div>
-        </div>
-      </div>
-    </div>
-    <div class="main-container">
-      <p class="company">Sneaker Company</p>
-      <h1 class="title">
-        Fall Limited Edition Sneakers
-      </h1>
-      <p class="description">These low-profile sneakers are your perfect casual wear companion.
-        Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
-      <div class="price">
-        <p class="discounted-total">$125.00</p>
-        <div class="discount">
-          <p>50%</p>
-        </div>
-        <p class="total">$250.00</p>
-      </div>
-      <div class="buy-component">
-        <div class="lightbox-component">
-          <div id="minus-button">
-            <img src="images/icon-minus.svg" alt="">
-          </div>
-          <p class="lightbox-current" id="current">0</p>
-          <div id="plus-button">
-            <img src="images/icon-plus.svg" alt="">
-          </div>
-        </div>
-        <div class="add-to-cart" id="add-cart">
-          <img src="images/icon-cart.svg" alt="" style="filter: brightness(0) invert(1);">
-          <p>Add to cart</p>
-        </div>
-      </div>
-    </div>
-  </main>
+    </aside>
 
-  <script src="image-manager.js"></script>
-  <script src="cart.js"></script>
+    <script src="image-manager.js"></script>
+    <script src="cart.js"></script>
+    <script src="drawer.js"></script>
 </body>
 
 </html>
